@@ -46,10 +46,10 @@ function renderTodos(todos) {
     }
 
     li.innerHTML = `
-      <button id="checker" class="btn btn-success" ${checked}>-</button>${item.name}
-      <button id="delete-button" class="btn btn-danger">X</button>
-      <input type="text" id="form-edit ${item.id}" class="form-control" style="width: 14vh; float: right; position: static;" placeholder="Edytuj tekst...">
-      <button id="edit" class="btn btn-warning" style="float: right; position: static;">Edytuj</button>
+    <button id="checker" class="btn btn-success" ${checked}>-</button>${item.name}
+    <button id="delete-button" class="btn btn-danger">X</button>
+    <input type="text" id="form-edit ${item.id}" class="form-control" style="width: 14vh; float: right; position: static;" placeholder="Edytuj tekst...">
+    <button id="edit" class="btn btn-warning" style="float: right; position: static;">Edytuj</button>
     `;
     todoItemsList.append(li);
   });
