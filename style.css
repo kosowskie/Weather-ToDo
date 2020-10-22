@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+.bg {
+  object-fit: cover;
+    width: 100%;
+    height: 120%;
+    position: fixed;
+    z-index: -1;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #73E831;
+}
+
+#group-add{
+  width: 50%;
+  left:25%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.mian-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.5em;
+  margin-top: -.5em;
+}
+
+.row{
+  top: 10%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+h1 {
+  color: #000000;
+  font-size: 3rem;
+}
+
+.todo-form {
+  margin: 40px 0px;
+}
+
+.todo-items {
+  min-width: 350px;
+}
+
+/*li class="item" */
+.item {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.item:first-child {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.item:last-child {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+/* item style end*/
+
+#delete-button {
+  float: right;
+  margin-left: 10px;
+}
+
+/* todo item checked */
+.checked { 
+  text-decoration: line-through;
+}
+
+p {
+  text-shadow: 2px 2px #ffffff;
+  color: #000000;
+  font-family: 'Homemade Apple';font-size: 22px;
+}
+
+.card{
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  width:40vh;
+  height:100%;
+  left: 5%;
+}
+
+#weatherPic{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vh;
+}
+
+@media screen and (max-width: 800px){
+  .row{
+    flex-direction: column;
+  }
+  #main-text{
+    font-size:12vw;
+  }
+}
